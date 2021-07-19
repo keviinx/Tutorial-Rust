@@ -16,7 +16,7 @@ fn main()
     println!("Quest No2: Please choose answer to the following question");
     println!("How old am I? \n Am I: \n 22 \n 28 \n 40");
     
-    loop
+    for n in 1 .. 4
     {
         io::stdin().read_line(&mut choice).expect("Failed");  
         choice = choice.trim().parse().expect("Failed");  
